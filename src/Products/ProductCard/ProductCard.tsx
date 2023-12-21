@@ -5,7 +5,7 @@ function ProductCard(props: { product: Product }) {
   return (
     <Link to={`${props.product.id}`}>
       <div className="bg-amber-200 aspect-square">
-        <img src={props.product.url} />
+        <img src={props.product.thumbnailUrl} alt={props.product.title} />
         <h3>{props.product.title}</h3>
       </div>
     </Link>

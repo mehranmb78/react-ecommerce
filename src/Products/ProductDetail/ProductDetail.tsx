@@ -11,7 +11,7 @@ function ProductDetail() {
       const apiProduct = await r.json()
       setProduct(apiProduct)
     })
-  }, [])
+  }, [params.id])
   return (
     <>
       <h1>{product?.title}</h1>
