@@ -1,6 +1,7 @@
 import { Link, Outlet } from 'react-router-dom'
 
 function Layout() {
+  // const basket = useSelector<RootState>(state => state.basket)
   return (
     <div>
       <nav>
@@ -11,6 +12,7 @@ function Layout() {
           <li>
             <Link to="/products">Products</Link>
           </li>
+          {/*<li>Basket: {basket.length}</li>*/}
         </ul>
       </nav>
 
