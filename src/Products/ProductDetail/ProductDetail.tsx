@@ -19,7 +19,7 @@ function ProductDetail() {
     <>
       <h1>{product.title}</h1>
       <button onClick={() => dispatch(add(product))}>+ Add to basket</button>
-      <img src={product?.url} alt={product.title} />
+      <img src={product?.url} alt={product.title} width="256px" height="265px" loading="lazy" />
       <p>product detail</p>
     </>
   ) : (
